@@ -1,0 +1,206 @@
+
+*{
+    padding: 1%;
+    margin:  1% ;
+    border: 2px;
+    /* box-sizing:  content-box  ; */
+}
+
+
+
+html{
+    font-size: 30px;
+    
+}
+body{
+    background-color:beige;
+}
+
+.header{
+    background-color: rgb(217, 164, 66);
+    text-align: center;
+   
+}
+footer{
+    background-color: rgb(217, 164, 66);
+    text-decoration: none;
+}
+
+h2{
+    text-align: center ;
+}
+p{
+    text-align: center;
+}
+ul{
+    text-align: center;
+}
+li{
+    text-align: center;
+}
+
+/* =======================================  page 1 ================================================ */
+
+.p1-grid-container{
+  
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 100%;
+  
+}
+.p1-section{
+    background-color: #946a6a;
+    padding: 20px;
+    /* flex: 1 1 1 1; */
+    
+    margin: 20px;
+    margin-bottom: 10px;
+ 
+}
+
+.p1-image{
+    padding: 3em;
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+/* ==================================== page 2 ========================================================= */
+
+.p2-grid-container{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "p2-header p2-header"
+    "p2-section1 p2-section2 "
+    "p2-section3 p2-section4"
+    "p2-footer p2-footer "
+
+
+
+
+    /* text-align: center;
+    border: 5px solid black */
+
+    /* display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    max-width: 100%;
+    border: 5px solid black;
+    padding: 5px;
+    margin: 10px;
+    align-items: center; */
+}
+
+.p2-section1{
+    grid-area: p2-section1;
+    background-color: #a38888;
+    padding: 20px;
+    height: 100%;
+}
+
+.p2-section2{
+    grid-area: p2-section2;
+    background-color: #a38888;
+    padding: 20px;
+    height: 100%;
+}
+.p2-section3{
+    grid-area: p2-section3;
+    background-color: #a38888;
+    padding: 20px;
+    height: 100%;
+}
+.p2-section4{
+    grid-area: p2-section4;
+    background-color: #a38888;
+    padding: 20px;
+    height: 100%;
+}
+
+
+.p2-header{
+    grid-area: p2-header;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    font-style: italic;
+    background-color: blueviolet;
+    text-align: center;
+    height: auto;
+    
+    
+}
+.p2-footer{
+grid-area: p2-footer;
+background-color: blueviolet;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 400;
+height: auto;
+
+}
+
+.p2-image{
+    
+    padding: 3em;
+    max-width: 50%;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================== Page 3 contact ================================================== */
+ 
+.p3-grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "p3-header p3-header "
+    "p3-section1  aside"
+     "p3-footer p3-footer" 
+}
+
+.p3-header{
+    grid-template-areas: p3-section;
+    background-color: rgb(255, 204, 127);
+    text-align: center;
+    
+}
+
+.p3-section1{
+    grid-template-areas: p3-section;
+    background-color: aquamarine;
+
+}
+
+
+.aside{
+    grid-template-areas: aside ;
+    background-color: rgb(110, 134, 126);
+}
+
+.p3-footer{
+    grid-template-areas:  p3-section2;
+    background-color: rgb(255, 204, 127);
+
+}
+
+.contact-image{
+    width: 300px;
+    height: 300px;
+    /* align: center; */
+
+}
